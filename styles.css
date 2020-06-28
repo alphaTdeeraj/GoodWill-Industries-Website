@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.header-container {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("./assets/laser_cutting_3.jpg");
+  background-size: 100% 100%;
+  margin-bottom: 20px;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  background-color: #932d2a;
+  color: white;
+}
+.nav-bar .logo {
+  flex: 1;
+}
+
+.nav-links-container {
+  display: flex;
+  flex: 1;
+  margin-left: 10px;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-links-container li {
+  margin: auto;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links-container li:hover {
+  border-bottom: 2px dotted white;
+}
+
+.make-white {
+  color: white;
+  margin-top: 10px;
+}
+
+.make-white:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.main-text-container {
+  width: 60%;
+  height: 50%;
+  margin-top: 200px;
+  margin-left: 5%;
+  min-width: 300px;
+}
+.main-text-container-text {
+  color: #dae2f0;
+  font-weight: bolder;
+  font-size: 23px;
+  line-height: 40px;
+}
+
+.main-text-button {
+  margin-top: 5px;
+  width: 200px;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #dae2f0;
+  background-color: #932d2a;
+  transition: width 500ms 0s ease-in-out;
+}
+
+.main-text-button:hover {
+  width: 210px;
+}
+
+.underline {
+  width: 80%;
+  height: 4px;
+  margin: 5px auto;
+  border-radius: 2px;
+  background-color: #932d2a;
+}
+
+.about-us-container {
+  width: 100%;
+}
+
+.info-container {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.heading-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.heading-main-text-container {
+  margin-top: 10px;
+  width: 100;
+  padding-left: 20px;
+  word-spacing: 6px;
+  line-height: 40px;
+}
+.heading-text {
+  font-weight: bolder;
+  font-size: 30px;
+  border-bottom: 2px solid #932d2a;
+}
+
+.heading-main-text {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.media-container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  flex-wrap: initial;
+}
+
+.header-img-container {
+  width: 500px;
+  height: 500px;
+  min-width: 500px;
+  margin: 10px auto;
+}
+
+.header-img-container img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.header-video-container {
+  width: 500px;
+  height: 500px;
+  min-width: 500px;
+  margin: 10px auto;
+  border-radius: 20px;
+}
+
+.our-service-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-service {
+  font-size: 50px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  border-bottom: 2px solid #932d2a;
+}
+
+.bottom-line {
+  width: 80%;
+  height: 4px;
+  border-radius: 2px;
+  margin: 20px auto;
+  background-color: #932d2a;
+}
+
+.contact-us {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.svg-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.svg-container img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+/* mobile devices */
+@media screen and (max-width: 500px) {
+  .nav-links-container li {
+    margin: auto;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .main-text-button {
+    margin-top: 5px;
+
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #dae2f0;
+    background-color: #932d2a;
+  }
+
+  .main-text-button:hover {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav-links-container li {
+    margin: auto;
+    font-weight: bold;
+    font-size: 10px;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.header-container {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("./assets/laser_cutting_3.jpg");
+  background-size: 100% 100%;
+  margin-bottom: 20px;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  background-color: #932d2a;
+  color: white;
+}
+.nav-bar .logo {
+  flex: 1;
+}
+
+.nav-links-container {
+  display: flex;
+  flex: 1;
+  margin-left: 10px;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-links-container li {
+  margin: auto;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links-container li:hover {
+  border-bottom: 2px dotted white;
+}
+
+.make-white {
+  color: white;
+  margin-top: 10px;
+}
+
+.make-white:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.links-container {
+}
+
+.main-text-container {
+  width: 60%;
+  height: 50%;
+  margin-top: 200px;
+  margin-left: 5%;
+  min-width: 300px;
+}
+.main-text-container-text {
+  color: #dae2f0;
+  font-weight: bolder;
+  font-size: 23px;
+  line-height: 40px;
+}
+
+.main-text-button {
+  margin-top: 5px;
+  width: 200px;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #dae2f0;
+  background-color: #932d2a;
+  transition: width 500ms 0s ease-in-out;
+}
+
+.main-text-button:hover {
+  width: 210px;
+}
+
+.underline {
+  width: 80%;
+  height: 4px;
+  margin: 5px auto;
+  border-radius: 2px;
+  background-color: #932d2a;
+}
+
+.about-us-container {
+  width: 100%;
+}
+
+.info-container {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.heading-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.heading-main-text-container {
+  margin-top: 10px;
+  width: 100;
+  padding-left: 20px;
+  word-spacing: 6px;
+  line-height: 40px;
+}
+.heading-text {
+  font-weight: bolder;
+  font-size: 30px;
+  border-bottom: 2px solid #932d2a;
+}
+
+.heading-main-text {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.media-container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  flex-wrap: initial;
+}
+
+.header-img-container {
+  width: 500px;
+  height: 500px;
+  min-width: 500px;
+  margin: 10px auto;
+}
+
+.header-img-container img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.header-video-container {
+  width: 500px;
+  height: 500px;
+  min-width: 500px;
+  margin: 10px auto;
+  border-radius: 20px;
+}
+
+.our-service-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-service {
+  font-size: 50px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  border-bottom: 2px solid #932d2a;
+}
+
+.bottom-line {
+  width: 80%;
+  height: 4px;
+  border-radius: 2px;
+  margin: 20px auto;
+  background-color: #932d2a;
+}
+
+.contact-us {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.svg-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.svg-container img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+/* mobile devices */
+@media screen and (max-width: 500px) {
+  .nav-links-container li {
+    margin: auto;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .main-text-button {
+    margin-top: 5px;
+
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #dae2f0;
+    background-color: #932d2a;
+  }
+
+  .main-text-button:hover {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav-links-container li {
+    margin: auto;
+    font-weight: bold;
+    font-size: 10px;
+  }
+}
