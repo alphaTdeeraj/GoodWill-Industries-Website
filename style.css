@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e2c46;
+}
+.nav-bar_logo-container {
+  width: 200px;
+  height: 40px;
+
+  background-image: url("./assets/logo_2.png");
+  background-size: 100% 100%;
+}
+
+.nav-bar_burger-container {
+  position: fixed;
+  left: 10px;
+  top: 20px;
+}
+
+.nav-bar_close-container {
+  position: fixed;
+  left: 50px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url("./assets/close.svg");
+  background-size: 100% 100%;
+}
+
+.nav-bar_menu-bar-container {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 150px;
+  height: 300px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  background-color: #0e2c46;
+  opacity: 0;
+  transition: opacity 500ms 0s ease-out;
+}
+
+.nav-bar_menu-bar-container_links-container {
+  display: flex;
+  margin-top: 30%;
+  width: 100%;
+  padding-left: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  list-style-type: none;
+  color: white;
+  font-size: 10px;
+}
+@media screen and (max-width: 400px) {
+  .nav-bar {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #0e2c46;
+  }
+}
