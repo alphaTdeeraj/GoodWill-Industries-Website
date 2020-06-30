@@ -88,6 +88,94 @@
   font-weight: bolder;
 }
 
+.jumbotron-container-button {
+  margin-top: 10px;
+  width: 150px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #72a4cf;
+
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.make-white {
+  color: white;
+  text-decoration: none;
+}
+
+.info-container {
+  margin-top: 25px;
+  padding-left: 20px;
+}
+.info-heading-container {
+  height: 30px;
+}
+.info-text {
+  font-weight: bolder;
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: #0e2c46;
+  margin-bottom: 10px;
+  color: #0e2c46;
+}
+
+.info-image-container {
+  width: 100%;
+  height: 500px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.info-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.make-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-container {
+  width: 100%;
+  height: 300px;
+  background-color: #0e2c46;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info-svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+/* 700px max-width */
+@media screen and (max-width: 700px) {
+  .jumbotron-container-text-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    padding-left: 4%;
+  }
+  .jumbotron-container-text {
+    font-size: 20px;
+    font-weight: bold;
+    width: 70%;
+  }
+}
+
+/* 400 px  */
 @media screen and (max-width: 400px) {
   .nav-bar {
     width: 100%;
@@ -108,42 +196,5 @@
     font-size: 10px;
     font-weight: bold;
     width: 80%;
-  }
-}
-
-.jumbotron-container-button {
-  margin-top: 10px;
-  width: 150px;
-  height: 35px;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background-color: #72a4cf;
-
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.make-white {
-  color: white;
-  text-decoration: none;
-}
-
-
-
-
-
-
-@media screen and (max-width: 700px) {
-  .jumbotron-container-text-container {
-    width: 100%;
-    height: 100%;
-    padding-top: 40%;
-    padding-left: 4%;
-  }
-  .jumbotron-container-text {
-    font-size: 20px;
-    font-weight: bold;
-    width: 70%;
   }
 }
