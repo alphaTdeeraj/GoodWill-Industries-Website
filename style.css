@@ -57,3 +57,14 @@
   line-height: 30px;
   word-spacing: 3px;
 }
+.main-text-container button {
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  background-color: #394141;
+  color: rgb(212, 209, 209);
+  font-size: 20px;
+}
