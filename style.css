@@ -66,6 +66,28 @@
   color: white;
   font-size: 10px;
 }
+
+.jumbotron-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/cnc_laser_cutting_5.jpg");
+  background-size: 100% 100%;
+}
+
+.jumbotron-container-text-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 15%;
+  padding-left: 4%;
+}
+
+.jumbotron-container-text {
+  color: wheat;
+  width: 50%;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
 @media screen and (max-width: 400px) {
   .nav-bar {
     width: 100%;
@@ -75,5 +97,53 @@
     justify-content: flex-end;
     align-items: center;
     background-color: #0e2c46;
+  }
+  .jumbotron-container-text-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+    padding-left: 4%;
+  }
+  .jumbotron-container-text {
+    font-size: 10px;
+    font-weight: bold;
+    width: 80%;
+  }
+}
+
+.jumbotron-container-button {
+  margin-top: 10px;
+  width: 150px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #72a4cf;
+
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.make-white {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  .jumbotron-container-text-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    padding-left: 4%;
+  }
+  .jumbotron-container-text {
+    font-size: 20px;
+    font-weight: bold;
+    width: 70%;
   }
 }
