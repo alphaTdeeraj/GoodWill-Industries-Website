@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
 }
+
 .logo-container {
   flex: 2;
   display: flex;
@@ -25,8 +26,8 @@
 
 .links-main-container {
   display: flex;
-  width: 500px;
-  margin-left: 40%;
+  width: 400px;
+  margin-left: 60%;
   padding-left: 20px;
   align-items: center;
 }
@@ -44,17 +45,17 @@
 }
 .main-page-container {
   width: 100vw;
-  height: 60vh;
+  height: calc(100vh + 100px);
   display: flex;
   justify-content: space-evenly;
-  background-image: url("./assets/background_2.png");
+  background-image: url("./assets/background.jpg");
   background-size: 100% 100%;
 }
 
 .info-container {
   display: flex;
   width: 100%;
-  height: 45vh;
+  height: 65vh;
   align-items: flex-end;
   justify-content: space-between;
 
@@ -63,7 +64,7 @@
 .company-logo-container {
   width: 400px;
   height: 100%;
-  margin-top: 20px;
+  margin-top: 100px;
   margin-left: 10px;
   display: flex;
   flex-direction: column;
@@ -81,4 +82,36 @@
   width: 1000px;
   font-weight: bold;
   font-family: "Bitter", serif;
+}
+
+.about-us-container {
+  width: 100vw;
+  height: 300px;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.about-us-img-container {
+  width: 400px;
+  height: 500px;
+  background-image: url("./assets/about_us.jpg");
+  background-size: 100% 100%;
+}
+.about-us-text-container {
+  width: 600px;
+  margin-top: 10px;
+
+  height: 360px;
+}
+
+.about-us-text-container h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+.about-us-text-container p {
+  font-size: 16px;
+  color: gray;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
