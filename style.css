@@ -45,7 +45,7 @@
   height: 75vh;
   display: flex;
   justify-content: space-evenly;
-  background-image: url("./assets/background_3.png");
+  background-image: url("./assets/background.png");
   background-size: 100% 100%;
 }
 
