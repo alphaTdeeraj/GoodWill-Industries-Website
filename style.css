@@ -9,7 +9,7 @@
 
 .nav-bar-container {
   width: 100%;
-  height: 100px;
+  height: 60px;
 
   position: fixed;
   background-color: #0d1216;
@@ -24,8 +24,10 @@
 }
 
 .links-main-container {
-  flex: 1;
   display: flex;
+  width: 500px;
+  margin-left: 40%;
+  padding-left: 20px;
   align-items: center;
 }
 
@@ -45,7 +47,7 @@
   height: 60vh;
   display: flex;
   justify-content: space-evenly;
-  background-image: url("./assets/background.png");
+  background-image: url("./assets/background_2.png");
   background-size: 100% 100%;
 }
 
