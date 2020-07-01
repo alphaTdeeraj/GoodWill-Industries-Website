@@ -7,13 +7,15 @@
     <title>GoodWill Industries</title>
   </head>
   <body>
-    <div class="nav-bar-container">
+    <div id="home" class="nav-bar-container">
       <div class="links-main-container">
         <ul class="links-container">
-          <li><a>Home</a></li>
-          <li><a>About Us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
           <li><a>Our Services</a></li>
-          <li style="margin-right: 20px;"><a>Contact Us</a></li>
+          <li style="margin-right: 20px;">
+            <a href="#contact-us">Contact Us</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -31,7 +33,7 @@
       </div>
     </div>
 
-    <div class="about-us-container">
+    <div id="about-us" class="about-us-container">
       <div class="about-us-img-container"></div>
       <div class="about-us-text-container">
         <h4>About Us</h4>
@@ -127,7 +129,7 @@
       </div>
     </div>
 
-    <div class="contact-us-container">
+    <div id="contact-us" class="contact-us-container">
       <div class="about-us-text-container">
         <h4>Contact Us</h4>
         <p>
@@ -144,5 +146,13 @@
         </p>
       </div>
     </div>
+
+    <!-- smooth Scrolling -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 300,
+      });
+    </script>
   </body>
 </html>

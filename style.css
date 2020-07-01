@@ -43,6 +43,11 @@
   font-weight: bold;
   font-size: 15px;
 }
+
+.links-container li a {
+  color: rgb(212, 209, 209);
+  text-decoration: none;
+}
 .main-page-container {
   width: 100vw;
   height: calc(100vh + 100px);
@@ -135,7 +140,6 @@
   padding-top: 20px;
   padding-left: 50px;
   width: 100vw;
-  background-color: rgb(253, 246, 246);
 }
 .contact-us-container h4 {
   font-size: 25px;
@@ -145,5 +149,5 @@
 .contact-us-container p {
   font-size: 20px;
   color: black;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
