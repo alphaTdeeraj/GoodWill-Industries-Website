@@ -99,8 +99,11 @@
 .about-us-img-container {
   width: 400px;
   height: 500px;
-  background-image: url("./assets/about_us.jpg");
-  background-size: 100% 100%;
+}
+
+.about-us-img-container img {
+  width: 100%;
+  height: 100%;
 }
 .about-us-text-container {
   width: 600px;
