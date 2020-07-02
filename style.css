@@ -19,17 +19,10 @@ body {
   align-items: center;
 }
 
-.logo-container {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .links-main-container {
   display: flex;
   width: 500px;
-  margin-left: 60%;
+  margin-left: 30%;
   padding-left: 20px;
   align-items: center;
 }
@@ -50,6 +43,42 @@ body {
   color: rgb(212, 209, 209);
   text-decoration: none;
 }
+
+/* DROP DOWN */
+.our-service-container {
+  position: relative;
+}
+.our-service-container:hover ul {
+  display: flex;
+}
+.our-service-container ul {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200px;
+  height: 200px;
+  margin-top: -20px;
+  padding-top: 30px;
+  top: 20px;
+  list-style-type: none;
+  background-color: #0d1216;
+  border-radius: 2px;
+}
+
+.our-service-container ul li {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 4px;
+  padding-left: 4px;
+  font-size: 15px;
+}
+.our-service-container ul li:hover {
+  background-color: rgb(58, 57, 57);
+}
+
 .main-page-container {
   width: 100vw;
   height: 100vh;
@@ -71,8 +100,8 @@ body {
 
 .slide-show-container {
   position: absolute;
-  width: 300px;
-  height: 400px;
+  width: 320px;
+  height: 420px;
   top: 140px;
   right: 140px;
   border-radius: 4px;
@@ -106,12 +135,12 @@ body {
 }
 .company-logo-container {
   width: 400px;
-  height: 100%;
+  height: 80%;
   margin-top: 100px;
   margin-left: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   z-index: 2;
 }
 
