@@ -379,15 +379,17 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
   }
+  .our-service-container ul li a {
+    font-size: 10px;
+  }
   .contact-us-container {
     padding-top: 60px;
-    padding-left: 50px;
+    padding-left: 10px;
     width: 100vw;
   }
   .main-contact-info-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
   }
   .single-info {
     flex: 1;
@@ -395,5 +397,11 @@ body {
     justify-content: space-between;
     height: 300px;
     position: relative;
+  }
+  .single-info-data {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 90%;
   }
 }
