@@ -417,6 +417,10 @@ body {
     left: 0%;
     width: 90%;
   }
+  .make-white {
+    color: black;
+    text-decoration: none;
+  }
 }
 
 /* ANIMATIONS */
