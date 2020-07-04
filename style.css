@@ -84,63 +84,40 @@ body {
   background-color: rgb(58, 57, 57);
 }
 
+.carousel-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.carousel-img {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
 .main-page-container {
+  position: absolute;
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #0d1216;
-  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
-
-[data-component="slideshow"] .slide {
-  display: none;
-  text-align: center;
-}
-
-/* SLIDE SHOW STYLES */
-[data-component="slideshow"] .slide.active {
-  display: flex;
-}
-
-.slide-show-container {
-  /* position: absolute; */
-  width: 500px;
-  height: 500px;
-  margin-top: 20%;
-
-  border-radius: 4px;
-  margin-right: 150px;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
-}
-.bottom-bar-container {
-  width: 100vw;
-  height: 50px;
-  background-image: url("./assets/bottom_bar.jpg");
-  background-size: 100% 100%;
-}
-
 .info-container {
   display: flex;
-  width: 100vw;
-  height: 65vh;
+  width: 50%;
+  height: 100%;
   align-items: flex-end;
   justify-content: space-between;
-
   padding-left: 10px;
 }
 .company-logo-container {
-  width: 400px;
+  width: 100%;
   height: 80%;
   margin-top: 100px;
   margin-left: 10px;
@@ -148,31 +125,54 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 .company-logo {
-  margin-bottom: 20px;
-  padding-left: 190px;
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-align: center;
 }
 .company-logo-container p {
   color: rgb(212, 209, 209);
-  font-size: 50px;
-  width: 1000px;
+  font-size: 300%;
+  width: 100%;
   font-weight: bold;
   font-family: "Bitter", serif;
+  text-align: center;
 }
-
+.bottom-bar-container {
+  width: 100vw;
+  height: 50px;
+  background-image: url("./assets/bottom_bar.jpg");
+  background-size: 100% 100%;
+}
 .about-us-container {
   width: 100vw;
   height: 600px;
   display: flex;
+  margin-top: 50px;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
+.about-us-container h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 600px;
+}
 .about-us-img-container {
   width: 400px;
   height: 500px;
 }
-
 .about-us-img-container img {
   width: 100%;
   height: 100%;
@@ -182,11 +182,7 @@ body {
   margin-top: 10px;
   height: 360px;
 }
-.about-us-text-container h4 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  font-weight: bolder;
-}
+
 .about-us-text-container p {
   font-size: 16px;
   color: gray;
@@ -282,7 +278,8 @@ body {
     position: fixed;
     background-color: #0d1216;
     display: flex;
-    align-items: center;
+    align-items: center !important;
+    padding-top: 10px;
   }
   .links-main-container {
     margin-left: 0px;
@@ -298,39 +295,37 @@ body {
   }
 
   .main-page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    overflow-x: hidden;
+    width: 60%;
+    top: 30%;
   }
   .info-container {
-    display: flex;
-    width: 100vw;
-    justify-content: space-evenly;
+    width: 100%;
   }
   .company-logo-container {
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-
+    align-items: center;
     padding-left: 0px;
     margin: auto;
     margin-top: 100px;
   }
   .company-logo-container img {
-    margin-left: -50px;
     width: 100px;
     height: 100px;
   }
 
   .company-logo-container p {
     color: rgb(212, 209, 209);
-    margin-left: 35px;
-    font-size: 25px;
-    width: 1000px;
+    margin-left: 0px;
+    font-size: 23px;
+    width: 100%;
     font-weight: bold;
     font-family: "Bitter", serif;
+
+    text-align: center;
   }
 
   .slide-show-container {
@@ -354,6 +349,12 @@ body {
     padding-bottom: 50px;
     padding-right: 0px;
   }
+
+  .about-us-content {
+    flex-direction: column;
+    height: 700px;
+    overflow-y: hidden;
+  }
   .about-us-img-container {
     width: 100vw;
     height: 400px;
@@ -362,6 +363,7 @@ body {
   }
   .about-us-img-container img {
     width: 100vw;
+    height: 400px;
     overflow: hidden;
   }
 
@@ -414,5 +416,15 @@ body {
     top: 20%;
     left: 0%;
     width: 90%;
+  }
+}
+
+/* ANIMATIONS */
+@keyframes bounce {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(-60px);
   }
 }
