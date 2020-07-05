@@ -84,48 +84,28 @@ body {
   background-color: rgb(58, 57, 57);
 }
 
-.carousel-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.main-container {
+  display: flex;
   width: 100vw;
   height: 100vh;
-  overflow-y: hidden;
-}
-.carousel-img {
-  width: 100vw !important;
-  height: 100vh !important;
+  background-color: #0d1216;
 }
 
-.main-page-container {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.info-container {
-  display: flex;
-  width: 50%;
+.logo-container {
+  width: 40%;
   height: 100%;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding-left: 10px;
 }
+
 .company-logo-container {
   width: 100%;
-  height: 80%;
-  margin-top: 100px;
-  margin-left: 10px;
+  height: 70%;
+  margin: 0px !important;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .company-logo {
+  margin: auto;
   animation-name: bounce;
   animation-duration: 3s;
   animation-delay: 0s;
@@ -135,11 +115,27 @@ body {
 }
 .company-logo-container p {
   color: rgb(212, 209, 209);
-  font-size: 300%;
+  font-size: 200%;
   width: 100%;
   font-weight: bold;
   font-family: "Bitter", serif;
   text-align: center;
+  margin: auto;
+}
+
+.carousel-container {
+  width: 60%;
+  height: 100%;
+  background-color: #0d1216;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .bottom-bar-container {
   width: 100vw;
@@ -180,7 +176,8 @@ body {
 .about-us-text-container {
   width: 600px;
   margin-top: 10px;
-  height: 360px;
+  height: 560px;
+  overflow-y: auto;
 }
 
 .about-us-text-container p {
@@ -294,46 +291,63 @@ body {
     padding-left: 10px;
   }
 
-  .main-page-container {
-    overflow-x: hidden;
-    width: 60%;
-    top: 30%;
-  }
-  .info-container {
-    width: 100%;
-  }
-  .company-logo-container {
+  .main-container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex: 1;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 0px;
-    margin: auto;
-    margin-top: 100px;
-  }
-  .company-logo-container img {
-    width: 100px;
-    height: 100px;
   }
 
+  .logo-container {
+    width: 100%;
+    height: 40%;
+  }
+
+  .company-logo-container {
+    width: 100%;
+    height: 100%;
+    margin: 0px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .company-logo {
+    margin: auto;
+    margin-bottom: 40%;
+    animation-name: mobileBounce;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-align: center;
+    margin-left: 10%;
+  }
   .company-logo-container p {
     color: rgb(212, 209, 209);
-    margin-left: 0px;
-    font-size: 23px;
+    font-size: 18px;
     width: 100%;
     font-weight: bold;
     font-family: "Bitter", serif;
-
     text-align: center;
+    margin: auto;
+    margin-top: 40%;
+    flex: 1;
   }
 
-  .slide-show-container {
-    position: absolute;
-    bottom: 15px;
+  .carousel-container {
     width: 100%;
-    height: 40%;
-    border-radius: 4px;
+    height: 60%;
+    background-color: #0d1216;
+  }
+  .carousel-item {
+    height: 60vh;
+    width: 100%;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   .bottom-bar-container {
     background-image: none;
@@ -417,14 +431,27 @@ body {
     left: 0%;
     width: 90%;
   }
+  .make-white {
+    color: black;
+    text-decoration: none;
+  }
 }
 
 /* ANIMATIONS */
 @keyframes bounce {
   from {
-    transform: translateY(-10px);
+    transform: translateY(100%);
   }
   to {
-    transform: translateY(-60px);
+    transform: translateY(70%);
+  }
+}
+
+@keyframes mobileBounce {
+  from {
+    transform: translateY(60%);
+  }
+  to {
+    transform: translateY(80%);
   }
 }
