@@ -62,7 +62,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   width: 200px;
-  height: 200px;
+  height: 300px;
   margin-top: -20px;
   padding-top: 30px;
   top: 20px;
@@ -267,7 +267,7 @@ body {
 @media only screen and (max-width: 1100px) {
   body,
   html {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   .nav-bar-container {
     width: 100vw;
@@ -355,19 +355,19 @@ body {
   }
 
   .about-us-container {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    max-width: 100vw;
     height: 800px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     padding-right: 0px;
   }
 
   .about-us-content {
     flex-direction: column;
     height: 700px;
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
   .about-us-img-container {
     width: 100vw;
@@ -378,12 +378,18 @@ body {
   .about-us-img-container img {
     width: 100vw;
     height: 400px;
-    overflow: hidden;
   }
 
   .about-us-container {
     width: 100vw;
-    overflow-x: auto;
+    height: 800px;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .about-us-text-container {
+    height: 500px;
+    flex: 1;
   }
   .about-us-text-container h4 {
     font-size: 20px;
@@ -392,7 +398,9 @@ body {
     font-weight: bolder;
   }
   .about-us-text-container p {
-    margin-left: 10px;
+    margin-left: 5px;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
   .our-services-container {
