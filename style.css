@@ -441,14 +441,20 @@ body {
     left: 0%;
     width: 90%;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6e213633cf449ca9c7e8dfe7aab7078bb107296f
   .make-white {
     color: black;
     text-decoration: none;
   }
+<<<<<<< HEAD
   .divider {
     background-color: white;
   }
+=======
+>>>>>>> 6e213633cf449ca9c7e8dfe7aab7078bb107296f
 }
 
 /* ANIMATIONS */
