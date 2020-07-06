@@ -271,12 +271,13 @@ body {
   }
   .nav-bar-container {
     width: 100vw;
-    height: 40px;
+    height: 60px;
     position: fixed;
     background-color: #0d1216;
     display: flex;
     align-items: center !important;
     padding-top: 10px;
+    z-index: 6;
   }
   .links-main-container {
     margin-left: 0px;
@@ -321,6 +322,7 @@ body {
     animation-direction: alternate;
     text-align: center;
     margin-left: 10%;
+    z-index: 5;
   }
   .company-logo-container p {
     color: rgb(212, 209, 209);
@@ -441,20 +443,13 @@ body {
     left: 0%;
     width: 90%;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> 6e213633cf449ca9c7e8dfe7aab7078bb107296f
   .make-white {
     color: black;
     text-decoration: none;
   }
-<<<<<<< HEAD
   .divider {
     background-color: white;
   }
-=======
->>>>>>> 6e213633cf449ca9c7e8dfe7aab7078bb107296f
 }
 
 /* ANIMATIONS */
