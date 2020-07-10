@@ -241,11 +241,13 @@ body {
 .divider {
   width: 6px;
   border-radius: 3px;
-  height: 100%;
+  height: 80%;
   margin: auto 10px;
   background-color: #0d1216;
 }
-
+.hide {
+  background-color: white;
+}
 .icon-container {
   display: flex;
   justify-content: space-between;
@@ -261,6 +263,11 @@ body {
 .icon-container h2 {
   margin-left: 20px;
   margin-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
 }
 /* MOBILE DEVICE STYLING   */
 
@@ -291,7 +298,9 @@ body {
     font-weight: bold;
     padding-left: 10px;
   }
-
+  .our-service-container ul {
+    height: 220px;
+  }
   .main-container {
     width: 100vw;
     height: 100vh;
