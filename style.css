@@ -385,7 +385,7 @@ body {
   }
   .about-us-img-container {
     width: 100vw;
-    min-height: 350px;
+    min-height: 400px;
     margin-top: 20px;
   }
   .about-us-img-container img {
@@ -428,6 +428,9 @@ body {
     overflow-x: hidden;
   }
 
+  .remove-content-mobile {
+    display: none;
+  }
   .our-services-container {
     width: 100vw;
     height: 100px;
