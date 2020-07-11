@@ -140,7 +140,7 @@ body {
 .bottom-bar-container {
   width: 100vw;
   height: 50px;
-  background-image: url("./assets/bottom_bar.jpg");
+  background-image: url("./images/bottom_bar.jpg");
   background-size: 100% 100%;
 }
 .about-us-container {
