@@ -6,3 +6,5 @@ if (lastURL === "calculations") {
     "https://alphatdeeraj.github.io/Goodwill-Industries-software/"
   );
 }
+
+
