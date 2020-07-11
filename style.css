@@ -267,6 +267,15 @@ body {
   margin-left: 20px;
   margin-top: 10px;
 }
+.button-container {
+  background-color: #0d1216;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  border: none;
+}
 
 .footer {
   text-align: center;
