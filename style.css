@@ -318,6 +318,7 @@ body {
     font-weight: bold;
     padding-left: 10px;
   }
+  .mobile-link
   .our-service-container ul {
     height: 220px;
   }
@@ -355,7 +356,7 @@ body {
   }
   .company-logo-container p {
     color: rgb(212, 209, 209);
-    font-size: 18px;
+    font-size: 25px;
     width: 100%;
     font-weight: bold;
     font-family: "Bitter", serif;
@@ -429,6 +430,10 @@ body {
     max-height: 450px !important;
     overflow-y: hidden !important;
   }
+  .water-jet-font{
+  font-size:15px !important;
+  line-height:30px !important;
+}
   .disable-scroll {
     overflow-y: hidden !important;
   }
