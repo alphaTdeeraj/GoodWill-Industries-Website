@@ -453,6 +453,9 @@ body {
     overflow-x: hidden;
   }
 
+  .decrease-margin {
+    margin-bottom: 10px !important;
+  }
   .remove-content-mobile {
     display: none;
   }
