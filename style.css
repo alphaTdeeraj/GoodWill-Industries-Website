@@ -21,7 +21,7 @@ body {
 
 .links-main-container {
   display: flex;
-  width: 500px;
+  width: 600px;
   margin-left: 60%;
   padding-left: 20px;
   align-items: center;
@@ -41,7 +41,7 @@ body {
 .links-container li {
   color: rgb(212, 209, 209);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .links-container li a {
