@@ -90,7 +90,7 @@ body {
 .main-container {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background-color: #0d1216;
 }
 
@@ -117,7 +117,7 @@ body {
   text-align: center;
 }
 .company-logo-container p {
-  color: rgb(212, 209, 209);
+  color: rgb(231, 219, 219);
   font-size: 200%;
   width: 100%;
   font-weight: bold;
@@ -132,7 +132,7 @@ body {
   background-color: #0d1216;
 }
 .carousel-item {
-  height: 100vh;
+  height: 90vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -143,8 +143,6 @@ body {
 .bottom-bar-container {
   width: 100vw;
   height: 50px;
-  background-image: url("./images/bottom_bar.jpg");
-  background-size: 100% 100%;
 }
 .about-us-container {
   width: 100vw;
@@ -184,16 +182,17 @@ body {
 }
 
 .about-us-text-container p {
-  font-size: 16px;
   color: gray;
-  line-height: 30px;
+  font-size: 18px !important;
+  line-height: 35px !important;
   margin-bottom: 20px;
+  overflow-y: hidden;
 }
 
-.water-jet-font {
+/* .water-jet-font {
   font-size: 18px !important;
   line-height: 40px !important;
-}
+} */
 .our-services-container {
   width: 100vw;
   height: 100px;
@@ -510,7 +509,7 @@ body {
 /* ANIMATIONS */
 @keyframes bounce {
   from {
-    transform: translateY(100%);
+    transform: translateY(90%);
   }
   to {
     transform: translateY(70%);
