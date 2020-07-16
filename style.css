@@ -186,13 +186,9 @@ body {
   font-size: 18px !important;
   line-height: 35px !important;
   margin-bottom: 20px;
-  overflow-y: hidden;
+  overflow-y: hidden !important;
 }
 
-/* .water-jet-font {
-  font-size: 18px !important;
-  line-height: 40px !important;
-} */
 .our-services-container {
   width: 100vw;
   height: 100px;
